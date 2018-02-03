@@ -13,11 +13,13 @@ class Text extends React.Component<any, any> {
 	render() {
 		const { text, counter, add, minus } = this.props.relaxProps;
 		return (
-			<div>
+			<div className={'text'}>
 				<span>{text}</span>
-				<button onClick={add} />
-				{counter}
-				<button onClick={minus} />
+				<div>
+					<button onClick={add}>+</button>
+					{counter}
+					<button onClick={minus}>-</button>
+				</div>
 			</div>
 		);
 	}

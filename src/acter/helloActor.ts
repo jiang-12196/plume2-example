@@ -3,7 +3,7 @@ import { Actor, Action, IMap } from 'plume2';
 class HelloActor extends Actor {
 	defaultState() {
 		return {
-			text: 'hello world',
+			text: '请选择',
 			counter: 0
 		};
 	}
