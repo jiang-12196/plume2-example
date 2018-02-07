@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Actor, Store, Relax, StoreProvider } from 'plume2';
+import { StoreProvider } from 'plume2';
 import Text from './text';
 import AppStore from './appStore';
 import './app'
