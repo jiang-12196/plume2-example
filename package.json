@@ -14,6 +14,7 @@
     "@types/node": "^8.0.14",
     "@types/react": "^15.0.38",
     "@types/react-dom": "^15.5.1",
+    "antd-mobile": "^2.1.6",
     "css-loader": "^0.28.9",
     "plume2": "0.3.2",
     "preact": "^8.2.1",
