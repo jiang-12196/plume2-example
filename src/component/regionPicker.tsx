@@ -1,4 +1,5 @@
 import React from 'react';
+import { Relax } from 'plume2';
 import { Picker } from 'antd-mobile';
 import data from './region';
 const region = data.CHINA_REGION;
@@ -14,24 +15,26 @@ const CustomChildren = (props) => {
 	);
 };
 
-class Test extends React.Component {
-	state = {
-		pickerValue: []
-	};
+@Relax
+class RegionPicker extends React.Component<any, any> {
+  static relaxProps = {
+    regionValue: 'regionValue',
+    changeRegion: () => {}
+  }
 	render() {
+    const { changeRegion, regionValue } = this.props.relaxProps
 		return (
-				<Picker
-					title="选择地区"
-					extra="请选择(可选)"
-					data={region}
-					value={this.state.pickerValue}
-					onChange={(v) => { console.log('onChange--->',v); this.setState({ pickerValue: v })}}
-					onOk={(v) => { console.log('onOk--->',v); this.setState({ pickerValue: v })}}
-				>
-					<CustomChildren>省市区</CustomChildren>
-				</Picker>
+			<Picker
+				title="选择地区"
+				extra="请选择(可选)"
+				data={region}
+				value={regionValue}
+        onOk={(value) => changeRegion(value)}
+			>
+				<CustomChildren>省市区</CustomChildren>
+			</Picker>
 		);
 	}
 }
 
-export default Test;
+export default RegionPicker;

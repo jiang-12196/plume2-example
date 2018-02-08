@@ -1,19 +1,15 @@
 import { Store } from 'plume2';
-import HelloActor from './acter/helloActor';
+import IndexActor from './acter/indexActor';
+import RegionPickerActor from './acter/regionPicker-actor';
 
 class AppStore extends Store {
 	bindActor() {
-		return [ new HelloActor() ];
+		return [ new IndexActor(), new RegionPickerActor() ];
 	}
 
-	// action
-	add = () => {
-		this.dispatch('add');
-	};
-
-	minus = () => {
-		this.dispatch('minus');
-	};
+	changeRegion = (value: Array<number>) => {
+		this.dispatch('changeRegion', value)
+	}
 }
 
 export default AppStore;
