@@ -19,8 +19,26 @@ button {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	height: 80%;
+	justify-content: center;
 }
 
 .text > span {
 	font-size: 26px;
+}
+
+.tabBarIcon {
+	width: 22px;
+	height: 22px;
+}
+
+.tabBar {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0
+}
+
+.tabBarSelectd {
+	color: #33a3f4;
 }
