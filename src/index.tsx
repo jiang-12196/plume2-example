@@ -4,6 +4,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import Addr from './addr/index';
 import Index from './index/index';
 import WebTabBar from './tabBar/index';
+import Good from './goods/index';
 import './app';
 
 // @StoreProvider(AppStore)
@@ -26,7 +27,7 @@ class App extends React.Component<any, any> {
           />
 					<Route
 						path="good"
-						component={Addr}
+						component={Good}
           />
 				</Route>
 			</Router>
