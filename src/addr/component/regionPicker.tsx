@@ -22,7 +22,7 @@ class RegionPicker extends React.Component<any, any> {
     changeRegion: () => {}
   }
 	render() {
-    const { changeRegion, regionValue } = this.props.relaxProps
+		const { changeRegion, regionValue } = this.props.relaxProps
 		return (
 			<Picker
 				title="选择地区"

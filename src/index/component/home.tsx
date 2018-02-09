@@ -4,7 +4,7 @@ import { withRouter } from 'react-router';
 
 @withRouter
 @Relax
-class Index extends React.Component<any, any> {
+class Home extends React.Component<any, any> {
 	static relaxProps = {
 		text: 'text',
 	};
@@ -19,4 +19,4 @@ class Index extends React.Component<any, any> {
 	}
 }
 
-export default Index;
+export default Home;
