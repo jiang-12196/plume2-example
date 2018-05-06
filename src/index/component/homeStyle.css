@@ -1,0 +1,11 @@
+.text {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 80%;
+	justify-content: center;
+}
+
+.text > span {
+	font-size: 26px;
+}

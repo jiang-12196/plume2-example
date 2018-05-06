@@ -6,8 +6,6 @@ import question from "./title";
 
 const RadioGroup = Radio.Group;
 
-console.log("question---->", question);
-
 @withRouter
 @Relax
 class Home extends React.Component<any, any> {
